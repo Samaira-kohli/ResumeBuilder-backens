@@ -15,7 +15,7 @@ await connectDB()
 app.use(cookieParser())
 
 app.use(cors({
-    origin: 'https://resume-builder-navy-alpha.vercel.app/',
+    origin: 'https://resume-builder-tau-five-89.vercel.app/',
     credentials: true
 }))
 app.use(express.json())
