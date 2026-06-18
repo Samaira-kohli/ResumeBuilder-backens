@@ -15,7 +15,7 @@ await connectDB()
 app.use(cookieParser())
 
 app.use(cors({
-    origin: 'https://resume-builder-tau-five-89.vercel.app/',
+    origin: 'https://resume-builder-tau-five-89.vercel.app',
     credentials: true
 }))
 app.use(express.json())
@@ -28,6 +28,4 @@ app.use('/api/users', userRouter)
 app.use('/api/resumes', resumeRouter)
 app.use('/api/ai', aiRouter)
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`)
-})
+export default app;
